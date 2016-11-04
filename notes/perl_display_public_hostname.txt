@@ -1,0 +1,1 @@
+curl -s http://www.displaymyhostname.com/ | perl -p -e 's/\n//g' | perl -p -e 's/.*\<div class="hostname">(.*?)<\/div>.*/$1\n/'
